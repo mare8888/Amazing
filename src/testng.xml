@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Auto">
+
+    <groups>
+        <define name="Smoke"/>
+        <define name="Regression"/>
+
+        <run>
+            <include name="Smoke"/>
+            <include name="Regression"/>
+        </run>
+    </groups>
+
+    <test name="Package1">
+        <classes>
+            <class name="WikiTest"/>
+        </classes>
+    </test>
+
+</suite>
