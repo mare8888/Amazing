@@ -15,7 +15,7 @@
 
     <test name="Package1">
         <classes>
-            <class name="WikiTest"/>
+            <class name="selenium.WikiTest"/>
         </classes>
     </test>
 
