@@ -35,14 +35,7 @@ public class WikiTest extends BaseTest{
         open("https://demoqa.com/droppable");
         DragAndDropPage page = new DragAndDropPage();
         page.dragAndDrop();
-/*
-        try {
-            Thread.sleep(10000);
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
 
- */
     }
 
 }
