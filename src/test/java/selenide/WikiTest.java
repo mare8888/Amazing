@@ -4,16 +4,15 @@ import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.assertj.core.api.Assertions.assertThat;
-
 import selenide.po.ArticlePage;
+import selenide.po.DragAndDropPage;
 import selenide.po.SearchPage;
+import selenide.po.SubmitAlertPage;
 
-public class WikiTest {
+public class WikiTest extends BaseTest{
 
     @Test
     void shouldBeOpenedArticle(){
-        open("https://ru.wikipedia.org/wiki");
-
         new SearchPage()
                 .searchUbisoftArticle("Ubisoft")
                 .clickEnter()
@@ -21,4 +20,29 @@ public class WikiTest {
 
         assertThat(new ArticlePage().getHeadingOfArticle()).as("The text must be Ubisoft: история изменений").isEqualTo("Ubisoft: история изменений");
     }
+
+    @Test
+    void submitAlerts() {
+        open("https://demoqa.com/alerts");
+
+        SubmitAlertPage page = new SubmitAlertPage();
+        page.clickOnButton();
+        page.acceptAlert();
+    }
+
+    @Test
+    void dragAndDropTest() {
+        open("https://demoqa.com/droppable");
+        DragAndDropPage page = new DragAndDropPage();
+        page.dragAndDrop();
+/*
+        try {
+            Thread.sleep(10000);
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+ */
+    }
+
 }

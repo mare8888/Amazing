@@ -9,6 +9,7 @@ public class ArticlePage {
     private final SelenideElement firstHeading = $x("//h1[@id='firstHeading']");
 
 
+
     public String getHeadingOfArticle() {
 
         return firstHeading.getText();

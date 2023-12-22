@@ -1,7 +1,6 @@
 package selenide.po;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -9,14 +8,14 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchPage {
 
 
-    private final String firstHeading = ".vector-search-box-input";
-    private final By articleElement = By.xpath("//li[@id='ca-history']/a");
     public SelenideElement searchInput(){
-        return $(firstHeading);
+
+        return $(".vector-search-box-input");
     }
 
     public SelenideElement article(){
-        return $(articleElement);
+
+        return $x("//li[@id='ca-history']/a");
     }
 
     public SearchPage searchUbisoftArticle(String text) {
