@@ -39,13 +39,21 @@ public class SearchTest extends BaseTest {
                 .addToListArticle("ABC");
 
         new ListSavedArticlePage()
-                .swipeElementRight(150);
-
+                .swipeElementRight(300);
     }
 
     @Test
-    void sdfs() {
+    void downloadScreenshot() {
         new SkipPage().clickSkip();
-        new MainPage().swipeToElementTo();
+        new SearchService().searchTest("Odesa");
+
+        new ArticleService()
+                .clickArticleAndSaveImage();
+    }
+
+    @Test
+    void testOfSwiping() {
+        new SkipPage().clickSkip();
+        new MainPage().swipeUpOnPage(1000);
     }
 }

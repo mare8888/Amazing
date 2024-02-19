@@ -37,10 +37,10 @@ public class ListSavedArticlePage extends BaseMethods {
         return this;
     }
 
-    public void swipeElementLeft(int time) {
-        swipeElementLeft(appiumArticle, time);
-    }
-
+//    public void swipeElementLeft(int time) {
+//        swipeElementLeft(appiumArticle, time);
+//    }
+//
     public void swipeElementRight(int time) {
         swipeElementRight(appiumArticle, time);
     }

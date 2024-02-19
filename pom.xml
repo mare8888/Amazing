@@ -24,7 +24,7 @@
         <aspectj.version>1.9.20.1</aspectj.version>
         <postgres.version>42.7.1</postgres.version>
         <aeonbits.version>1.0.12</aeonbits.version>
-        <appium.version>7.3.0</appium.version>
+        <appium.version>9.1.0</appium.version>
         <usernameDB>usernameDB</usernameDB>
         <passwordDB>passwordDB</passwordDB>
     </properties>

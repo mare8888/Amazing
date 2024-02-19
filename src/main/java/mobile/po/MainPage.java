@@ -9,14 +9,14 @@ public class MainPage extends BaseMethods {
 
 
     public void swipeUpOnPage(int time) {
-        swipeUp(time);
+        swipeUp(topRead, time);
     }
-
-    public void swipeDownOnPage(int time) {
-        swipeDown(time);
-    }
-
-    public void swipeToElementTo() {
-        swipeToElement(topRead, 10000);
-    }
+//
+//    public void swipeDownOnPage(int time) {
+//        swipeDown(time);
+//    }
+//
+//    public void swipeToElementTo() {
+//        swipeToElement(topRead, 2000);
+//    }
 }

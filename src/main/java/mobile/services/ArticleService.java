@@ -9,7 +9,14 @@ public class ArticleService {
     public String getArticleName() {
         return articlePage
                 .clickFirstArticle()
+
                 .getArticleName();
+    }
+
+    public void clickArticleAndSaveImage() {
+        articlePage
+                .clickFirstArticle()
+                .downloadPicture();
     }
 
     public void clickArticle() {

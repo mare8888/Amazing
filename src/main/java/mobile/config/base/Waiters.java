@@ -7,15 +7,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+import java.time.Duration;
+
 import static mobile.config.driver.DriverInit.getDriver;
 import static mobile.utils.Utils.f;
 
 public class Waiters {
 
-    protected AppiumDriver<WebElement> driver = getDriver();
+    protected AppiumDriver driver = getDriver();
 
     private WebDriverWait waiter(long timeOutSeconds) {
-        return new WebDriverWait(driver, timeOutSeconds);
+        return new WebDriverWait(driver, Duration.ofSeconds(timeOutSeconds));
     }
 
     protected WebElement presence(By by) {

@@ -10,7 +10,7 @@ import static mobile.config.driver.DriverInit.quit;
 
 public class BaseTest {
 
-    protected static AppiumDriver<WebElement> driver;
+    protected static AppiumDriver driver;
 
     @BeforeMethod
     public void setUp() {

@@ -14,14 +14,14 @@ import static org.aeonbits.owner.ConfigFactory.create;
 
 public class DriverInit {
 
-    private static volatile AppiumDriver<WebElement> driver;
+    private static volatile AppiumDriver driver;
     private static final BaseConfig config = create(BaseConfig.class, getProperties());
 
     private DriverInit() {
     }
 
     @SneakyThrows
-    public static AppiumDriver<WebElement> getDriver() {
+    public static AppiumDriver getDriver() {
         if (driver == null) {
             synchronized (DriverInit.class) {
                 if (driver == null) {
@@ -34,7 +34,7 @@ public class DriverInit {
                     capabilities.setCapability("appActivity", config.appActivity());
                     capabilities.setCapability("app", config.app());
 
-                    driver = new AndroidDriver<>(new URL(config.url()), capabilities);
+                    driver = new AndroidDriver(new URL(config.url()), capabilities);
                 }
             }
         }
