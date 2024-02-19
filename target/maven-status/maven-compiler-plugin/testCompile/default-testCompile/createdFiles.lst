@@ -1,5 +1,0 @@
-mobile\BasicTest.class
-ui\selenide\WikiTest.class
-api\test\GenerateTokenTest.class
-ui\selenide\BaseTest.class
-db\DBTest.class
