@@ -1,1 +1,0 @@
-{"uuid":"033a4604-4871-4e33-a789-4b51f3644107","name":"ui.selenide.BaseTest.setUp","children":["64095010-9625-4c27-868a-12ad64c36f71"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1705603947060,"stop":1705603949543}],"afters":[],"start":1705603947059,"stop":1705603949543}
