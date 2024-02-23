@@ -3,8 +3,6 @@ package mobile.po;
 import mobile.config.base.BaseMethods;
 import org.openqa.selenium.By;
 
-import java.util.List;
-
 public class ListSavedArticlePage extends BaseMethods {
 
     private final By addToListButton = By.xpath("//android.widget.Button[@resource-id='org.wikipedia:id/snackbar_action']");
@@ -37,10 +35,6 @@ public class ListSavedArticlePage extends BaseMethods {
         return this;
     }
 
-//    public void swipeElementLeft(int time) {
-//        swipeElementLeft(appiumArticle, time);
-//    }
-//
     public void swipeElementRight(int time) {
         swipeElementRight(appiumArticle, time);
     }

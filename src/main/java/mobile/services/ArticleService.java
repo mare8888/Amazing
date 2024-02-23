@@ -9,18 +9,19 @@ public class ArticleService {
     public String getArticleName() {
         return articlePage
                 .clickFirstArticle()
-
                 .getArticleName();
     }
 
-    public void clickArticleAndSaveImage() {
-        articlePage
-                .clickFirstArticle()
-                .downloadPicture();
+    public void saveImage() { articlePage.downloadPicture(); }
+    public void clickMore() { articlePage.clickMoreButton(); }
+    public void clickList(){
+        articlePage.clickList();
+    }
+    public void deleteList(){
+        articlePage.deleteList();
+    }
+    public void confirmDelete(){
+        articlePage.confirmDelete();
     }
 
-    public void clickArticle() {
-        articlePage
-                .clickFirstArticle();
-    }
 }

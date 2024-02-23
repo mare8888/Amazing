@@ -4,11 +4,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import lombok.SneakyThrows;
 import mobile.config.props.BaseConfig;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.net.URL;
-
 import static java.lang.System.getProperties;
 import static org.aeonbits.owner.ConfigFactory.create;
 
@@ -45,6 +42,4 @@ public class DriverInit {
         driver.quit();
         driver = null;
     }
-
-
 }
